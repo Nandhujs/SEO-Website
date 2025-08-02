@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0; /* <-- ensure this is 0 */
+}
+
+
+.logo {
+  width: 300px;
+  height: auto;
+  margin-left: 0;
+}
+
+
+header {
+  background: lightblue;
+  color: white;
+  padding: 15px 0;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px; /* optional for spacing inside nav */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 55px;
+  margin-right: 200px;
+}
+
+.nav-links li a {
+  color: black;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.nav-links li a:hover {
+  background: #0055a5;
+  color: white;
+}
+
+main {
+  margin: 30px auto;
+  max-width: 1100px;
+}
+
+.about {
+  margin-bottom: 30px;
+}
+
+.media-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.media-item {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+
+.responsive-img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.responsive-img:hover {
+  transform: scale(1.03);
+}
+
+video {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+form input, form select, form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background: #003366;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: #0055a5;
+}
+
+footer {
+  background: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+footer a {
+  color: #66ccff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.placement {
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 10px 0;
+}
+
+.placement-text {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scroll-left 15s linear infinite;
+  color: red;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.course-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 0 20px;
+}
+
+.course {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+.course:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.course img {
+  width: 100%;
+  max-height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.course h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.course p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.reg{
+    margin-top: 100px;
+    height: 450px;
+}
+
+.contact{
+    margin-top: 90px;
+    height: 460px;
+}
